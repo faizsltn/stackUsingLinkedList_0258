@@ -13,3 +13,18 @@ public :
         next = NULL;
     }
 };
+
+//stack class
+class Stack
+{
+private:
+    Node *top; //pointer to the top node of the stuck
+
+public:
+    Stack()
+    {
+        top = NULL; //initialize the stuck with a null top pointer
+    }
+
+    //
+};
