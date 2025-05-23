@@ -37,5 +37,17 @@ public:
         return value;
     }
 
-    
+    //pop operation : remove the topmost element from the stuck
+    void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stuck is empty." << endl;
+        }
+
+        Node *temp = top; //create a temporary pointer to the top node
+        top = top->next;  //update the top pointer to the next node
+        cout << "Popped value: " << top->data << endl;
+        delete temp;
+    }
 };
